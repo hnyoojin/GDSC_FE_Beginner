@@ -35,6 +35,11 @@ header .PageName:visited {
 main {
     margin-left: 30px;
 }
+.intro {
+    color:rgb(255, 60, 0);
+    background-color: rgb(127, 246, 255);
+    display: inline;
+}
 /* Favorite Songs Table */
 .table_song {
     width: 500px;
@@ -52,6 +57,33 @@ td, th {
     text-decoration: none;
     background-color: rgb(255, 180, 172);
 }
+.IE {
+    margin: 40px 0 9.05px 0px;
+}
+/* Images */
+.img_myBeanie {
+    margin: 40px 0 0 1;
+    width: 300px;
+    background-image: "myBeanie.PNG";
+}
+.img_myDiary {
+    margin: 40px 40px 0 40px;
+    width: 200px;
+}
+.img_Pocoyo {
+    margin: 125px 0 0 0;
+    width: 200px;
+}
+.img {
+    margin-left: 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.img1 {flex-grow: 1;}
+.img2 {flex-grow: 1;}
+.img3 {flex-grow: 1;}
+
 /* grid1 */
 #grid1 {
     display: grid;
@@ -97,14 +129,15 @@ td, th {
     padding-top:3px;
 }
 .item4 a{text-decoration:none; color:black;}
-/* 700px 이하일 때 */
-@media(max-width: 700px){
+/* 850px 이하일 때 */
+@media(max-width: 1200px){
     #grid1 {
         display: none;
     }
 }
-/* 700px 이상일 때*/
-@media(min-width: 700px){
+/* 850px 이상일 때*/
+/*@media(max-width:1200px,)*/
+@media(min-width: 1200px){
     #grid2 {
       display: none;
     }

@@ -1,0 +1,121 @@
+/* 위아래 좌우*/
+/* 위 좌우 아래*/
+/* 상 우 하 좌*/
+
+*{
+    background-color: beige;
+}
+body {
+    margin: 15px;
+}
+header {
+    border-bottom: 3px solid rgb(114, 127, 115);
+    color: rgb(20, 90, 76);
+    text-align: center;
+    padding: 10px 20px 20px 20px;  
+    margin-bottom: 10px 10px 10px 0;
+}
+.PageName {
+    font-size: 40px;
+    font-weight: bold;
+    text-decoration: none;
+}
+header .PageName:visited {
+  color: rgb(20, 90, 76);
+}
+/* menu */
+.menu {
+    border-right: 3px solid rgb(114, 127, 115);
+    margin: 0 0 0 20px;
+    padding: 20px 0;
+}
+.menu a{text-decoration:none;}
+.menu a:visited{color:black;}
+/* main */
+main {
+    margin-left: 30px;
+}
+.ggongzi {
+    width: 100px;
+}
+.button1 {
+    margin: 40px 0 20px 0;
+    background-color: yellow;
+}
+/* table */
+.table1 {
+    width: 200px;
+    margin: 40px 0 0 0;
+    background-color: rgb(149, 88, 255);
+    border-radius: 2%;
+    text-align: center;
+}
+th, td {
+    border: 1px solid;
+    background-color: rgb(253, 192, 240);
+}
+/* Contacts Box */
+.ContactsBox {
+    width: 210px;
+    border: 2px dotted black;
+    border-radius: 3%;
+    padding: 5px 10px 5px 10px;
+}
+
+/* grid1 */
+#grid1 {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+}
+/* grid2 banner */
+.banner{
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    border-bottom: 3px solid rgb(114, 127, 115); 
+}
+/* banner - Home */
+.item1 {
+    text-align: center;
+    text-decoration: none;
+    border-right: 3px solid rgb(114, 127, 115);
+    flex-grow: 1;
+    padding-top:3px;
+}
+.item1 a{text-decoration:none; color:black;}
+/* Banner - SNS */
+.item2 {
+    text-align: center;
+    border-right: 3px solid rgb(114, 127, 115);
+    flex-grow: 1;
+    padding-top:3px;
+}
+.item2 a{text-decoration:none; color:black;}
+/* Banner - Contacts */
+.item3 {
+    text-align: center;
+    border-right: 3px solid rgb(114, 127, 115);
+    flex-grow: 1;
+    padding-top:3px;
+}
+.item3 a{text-decoration:none; color:black;}
+/* Banner - TMI */
+.item4 {
+    text-align: center;
+    flex-grow: 1;
+    padding-top:3px;
+}
+.item4 a{text-decoration:none; color:black;}
+/* 700px 이하일 때 */
+@media(max-width: 700px){
+    #grid1 {
+        display: none;
+    }
+}
+/* 700px 이상일 때*/
+@media(min-width: 700px){
+    #grid2 {
+      display: none;
+    }
+}

@@ -107,14 +107,14 @@ th, td {
     padding-top:3px;
 }
 .item4 a{text-decoration:none; color:black;}
-/* 700px 이하일 때 */
-@media(max-width: 700px){
+/* 850px 이하일 때 */
+@media(max-width: 850px){
     #grid1 {
         display: none;
     }
 }
-/* 700px 이상일 때*/
-@media(min-width: 700px){
+/* 850px 이상일 때*/
+@media(min-width: 850px){
     #grid2 {
       display: none;
     }

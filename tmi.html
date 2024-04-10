@@ -9,15 +9,31 @@
     <!--header--------------------------------------------------------------------------------------->
     <header>
       <a class="PageName" href="index.html" title="[Home] Hwang Yoojin">Yoojin.H</a>
+      <input type="button" value="OFF" style="background-color: rgb(131, 131, 131);" onclick="
+          document.querySelector('.PageName').style.color = 'rgb(128, 111, 77)';
+          document.querySelector('.PageName').style.borderColor='rgb(190, 173, 136)';
+          document.querySelector('.PageName').style.backgroundColor='rgb(216, 198, 159)';
+        ">
+        <input type="button" value="ON" style="background-color: rgb(255, 238, 0);" onclick="
+          document.querySelector('.PageName').style.color = 'rgb(61, 203, 247)';
+          document.querySelector('.PageName').style.borderColor='rgb(255, 139, 139)';
+          document.querySelector('.PageName').style.backgroundColor='rgb(255, 218, 224)';
+        ">
     </header>
     <!-- when width is longer than 700px ------------------------------------------------------------>
     <div id="grid1">
         <aside class="menu">
           <!-- 이거 나중에 버튼으로 구현할 수 있으면 해봐 -->
-            <a href="index.html" title="Home">- Home</a><br>
-            <a href="sns.html" title="SNS">- SNS</a><br>
-            <a href="contact.html" title="Contact">- Contact</a><br>
-            <a href="tmi.html" title="TMI" style="color:rgb(18, 209, 91);">- TMI</a>
+          <br>
+          <a href="index.html" title="Home">Home</a><br><br>
+          <a href="sns.html"   title="SNS">SNS</a><br><br>
+          <a href="contact.html" title="Contact">Contact</a><br><br>
+          <b><a href="tmi.html"  title="TMI" style="
+            color:rgb(18, 209, 91); 
+            background-color: rgb(200, 255, 0);
+            border:2px solid rgb(255, 0, 221);">
+            TMI</a>
+          </b>
         </aside>
         <main>
           <h3 class="intro">
@@ -56,11 +72,12 @@
           <div class="item1"><a href="index.html" title="Home">Home</a></div>
           <div class="item2"><a href="sns.html" title="SNS">SNS</a></div>
           <div class="item3"><a href="contact.html" title="">Contacts</a></div>
-          <div class="item4"><a href="tmi.html" title="TMI" style="color:rgb(18, 209, 91);">TMI</a></div>
+          <div class="item4"><a href="tmi.html" title="TMI" style="
+          color:rgb(18, 209, 91);"><b>TMI</b></a></div>
         </div>
         <main>
           <h3 class="intro">
-            <br>These are my FAVORITE songs and Photos!!
+            <br><br>These are my FAVORITE songs and Photos!!
           </h3>
           <table class="table_song">
               <tr>

@@ -10,7 +10,7 @@ body {
 }
 header {
     border-bottom: 3px solid rgb(177, 176, 160);
-    padding: 10px 20px 30px 40px;  
+    padding: 10px 20px 30px 30px;  
     margin-bottom: 10px 10px 10px 0;
 }
 .PageName {
@@ -24,9 +24,10 @@ header {
     border-radius: 4%;
     margin: 0 18px 0 0;
 }     
-header .PageName:visited {  
+.PageName:visited {  
     color: rgb(61, 203, 247);   
 }
+.PageName:hover{color:rgb(2, 255, 167);}
 /* menu */
 .menu {
     border-right: 4px dotted rgb(177, 176, 160);
@@ -41,10 +42,50 @@ header .PageName:visited {
     text-decoration:none;
 }
 .menu a:visited{color:rgb(104, 43, 28);}
-/* main */
-main {
-    margin-left: 30px;
+.menu a:hover{color:red;}
+/* grid1 */
+#grid1 {
+    display: grid;
+    grid-template-columns: 200px 1fr;
 }
+/* grid2 banner */
+.banner{
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    border-bottom: 3px solid rgb(177, 176, 160);
+}
+.banner a {text-decoration:none; color:black;}
+.banner a:hover{color:red;}
+/* banner - Home, SNS, Contacts */
+.item1,.item2,.item3 {
+    text-align: center;
+    border-right: 3px solid rgb(177, 176, 160);
+    flex-grow: 1;
+    padding-top:3px;
+}
+/* Banner - TMI */
+.item4 {
+    text-align: center;
+    flex-grow: 1;
+    padding-top:3px;
+}
+/* 850px 이하일 때 */
+@media(max-width: 1200px){
+    #grid1 {
+        display: none;
+    }
+}
+/* 850px 이상일 때*/
+/*@media(max-width:1200px,)*/
+@media(min-width: 1200px){
+    #grid2 {
+      display: none;
+    }
+}
+/*------------------------------------------------*/
+#grid2 main { margin-left: 30px;}
 .intro {
     color:rgb(255, 60, 0);
     background-color: rgb(127, 246, 255);
@@ -67,6 +108,7 @@ td, th {
     text-decoration: none;
     background-color: rgb(255, 180, 172);
 }
+.table_song a:hover{font-style:bold;color:red;}
 .IE {
     margin: 40px 0 9.05px 0px;
 }
@@ -94,43 +136,18 @@ td, th {
 .img2 {flex-grow: 1;}
 .img3 {flex-grow: 1;}
 
-/* grid1 */
-#grid1 {
-    display: grid;
-    grid-template-columns: 200px 1fr;
+.realTMI {
+    width: 460px;
+    border: 3px dotted rgb(113, 59, 0);
+    border-radius: 2%;
+    padding: 15px;
+    margin: 50px 0 50px 10px;
+    color: rgb(113, 59, 0);
+    background-color: rgb(255, 255, 0);
 }
-/* grid2 banner */
-.banner{
-    height: 30px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    border-bottom: 3px solid rgb(177, 176, 160);
-}
-.banner a {text-decoration:none; color:black;}
-/* banner - Home, SNS, Contacts */
-.item1,.item2,.item3 {
-    text-align: center;
-    border-right: 3px solid rgb(177, 176, 160);
-    flex-grow: 1;
-    padding-top:3px;
-}
-/* Banner - TMI */
-.item4 {
-    text-align: center;
-    flex-grow: 1;
-    padding-top:3px;
-}
-/* 850px 이하일 때 */
-@media(max-width: 1200px){
-    #grid1 {
-        display: none;
-    }
-}
-/* 850px 이상일 때*/
-/*@media(max-width:1200px,)*/
-@media(min-width: 1200px){
-    #grid2 {
-      display: none;
-    }
+.realTMI b{
+    color: red;
+    background-color: aquamarine;
+    padding: 3px;
+    margin: 5px;
 }

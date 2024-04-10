@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Hwang Yoojin</title>
+    <link rel="stylesheet" href="contactme.css">
+</head>
+<body>
+  <!-- alret: What is Pane?? -->
+  <script>alert("Pane is bread in Italy")</script>
+<!--header--------------------------------------------------------------------------------------->
+  <header>
+    <a class="PageName" href="index.html" title="[Home] Hwang Yoojin">Yoojin.H</a>
+    <!-- header color button (ON/OFF) -->
+    <input type="button" value="ON" style="background-color: rgb(255, 238, 0);" onclick="
+      document.querySelector('.PageName').style.color = 'rgb(61, 203, 247)';
+      document.querySelector('.PageName').style.borderColor='rgb(255, 139, 139)';
+      document.querySelector('.PageName').style.backgroundColor='rgb(255, 218, 224)';
+    ">
+    <input type="button" value="OFF" style="background-color: rgb(131, 131, 131);" onclick="
+      document.querySelector('.PageName').style.color = 'rgb(128, 111, 77)';
+      document.querySelector('.PageName').style.borderColor='rgb(190, 173, 136)';
+      document.querySelector('.PageName').style.backgroundColor='rgb(216, 198, 159)';
+    ">
+  </header>
+<!-- grid1 : when width is longer than 1200px --------------------------------------------------->
+  <div id="grid1">
+    <!-- side bar -->
+    <aside class="menu"><br>
+        <a    href="index.html"     title="Home">Home</a><br><br>
+        <a    href="warning.html"   title="DANGER">DANGER</a><br><br>
+        <b><a href="contactme.html" title="ContactMe" style="
+        color:rgb(18, 209, 91); 
+        background-color: rgb(200, 255, 0);
+        border:2px solid rgb(255, 0, 221);
+        margin:2px 0;">
+        Contact Me</a></b><br><br>
+        <a    href="tmi.html"       title="TMI">TMI</a>
+    </aside>
+    <!-- main -->
+    <main>
+      <br><br>
+      <details>
+        <summary><b class="intro">Contact Me !!!!</b></summary>
+        <!-- contacts drop down -->
+        <p class="contact">
+          <ul>
+            <li><a href="https://www.instagram.com/hwngyoojin" 
+              target="_blank" title="ig" style="color:black;text-decoration: none;">
+              Instagram</a></li>
+            <li><a href="https://m.blog.naver.com/dddpdpdppddd"
+              target="_blank" title="NaverBlog" style="color:black;text-decoration: none;">
+              Naver Blog</a></li>
+            <li><a href="https://github.com/hnyoojin" 
+              target="_blank" title="Github" style="color:black;text-decoration: none;">
+              Github</a></li>
+          </ul>
+        </p>
+      </details>
+    </main>
+  </div>
+<!-- grid2 : when width is shorter than 1200px ------------------------------------------------->
+  <div id="grid2">
+    <!--banner-->
+    <div class="banner">
+      <div class="item1"><a href="index.html" title="Home">Home</a></div>
+      <div class="item2"><a href="warning.html" title="DANGER">DANGER</a></div>
+      <div class="item3"><a href="contactme.html" title="ContactMe" style="color:rgb(18, 209, 91);"><b>Contact Me</b></a></div>
+      <div class="item4"><a href="tmi.html" title="TMI">TMI</a></div>
+    </div>
+    <!-- main -->
+    <main>
+      <br><br>
+      <details>
+        <summary><b class="intro">Contact Me !!!!</b></summary>
+        <!-- contacts drop down -->
+        <p class="contact">
+          <ul>
+            <li><a href="https://www.instagram.com/hwngyoojin" target="_blank" title="ig" style="color:black;text-decoration: none;">Instagram</a></li>
+            <li><a href="https://m.blog.naver.com/dddpdpdppddd" target="_blank" title="NaverBlog" style="color:black;text-decoration: none;">Naver Blog</a></li>
+            <li><a href="https://github.com/hnyoojin" target="_blank" title="Github" style="color:black;text-decoration: none;">Github</a></li>
+          </ul>
+        </p>
+      </details>
+    </main>
+  </div>
+</body>
+</html>

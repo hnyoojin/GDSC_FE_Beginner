@@ -24,6 +24,11 @@ header {
     color: rgb(61, 203, 247);   
 }
 .PageName:hover{color:rgb(2, 255, 167);}
+/* button (ON/OFF) */
+.ON_button{background-color: yellow;}
+.ON_button:hover{background-color: rgb(255, 183, 0);}
+.OFF_button{background-color: gray;}
+.OFF_button:hover{background-color: rgb(213, 118, 118);}
 /* menu */
 .menu {
     border-right: 4px dotted rgb(177, 176, 160);
@@ -81,7 +86,6 @@ header {
     }
 }
 /* -------------------------------------------------------*/
-
 .intro {
     color:rgb(255, 60, 0);
     background-color: rgb(127, 246, 255);
@@ -90,3 +94,9 @@ header {
     margin:5px;
     font-size: x-large;
 }
+.sea_rabbit {
+    color:rgb(43, 43, 43);
+    background-color: rgb(223, 221, 205);
+}
+.sea_rabbit:hover{background-color: rgb(142, 171, 196);}
+.detail {display:none;}

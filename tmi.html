@@ -6,13 +6,13 @@
     <link rel="stylesheet" href="css/tmi.css">
 </head>
 <body>
-<!--header--------------------------------------------------------------------------------------->
-  <header>
-    <a class="PageName" href="index.html" title="[Home] Hwang Yoojin">Yoojin.H</a>
-    <!-- header color button (ON/OFF) -->
-    <button onclick="ON">ON</button>
-    <button onclick="OFF">OFF</button>
-  </header>
+  <!--header--------------------------------------------------------------------------------------->
+    <header>
+      <a class="PageName" href="index.html" title="[Home] Hwang Yoojin">Yoojin.H</a>
+      <!-- header color button (ON/OFF) -->
+      <button onclick="ON()" class="ON_button">ON</button>
+      <button onclick="OFF()"class="OFF_button">OFF</button>
+    </header>
 <!-- grid1 : when width is longer than 1200px --------------------------------------------------->
   <div id="grid1">
     <!-- side bar -->
@@ -28,8 +28,8 @@
     </aside>
     <!-- main -->
     <main>
-      <h3 class="intro">
-        <br>These are my FAVORITE songs and Photos!!
+      <br><h3 class="intro">
+        These are my FAVORITE songs and Photos!!
       </h3>
       <!-- Favorite song table -->
       <table class="table_song">
@@ -75,9 +75,9 @@
         사소한 게 마음에 안들어서 계속 고치고 고치고 고치는 중이에요....<br>
         근데 완벽하진 않다는 게 포인트입니다 ^_^
         <br><br>
-        <b class="Q1">오늘의 궁금증 : 순대에 간장을 찍어 먹으면 무슨 맛이 날까?</b><br><br>
+        <b class="Q1">오늘의 궁금증 : 순대를 간장에 찍어 먹으면 무슨 맛이 날까?</b><br><br>
         다들 궁금해지셨죠?<br>
-        다음에 순대 먹을 때 간장에 찍어서 드셔 보세요
+        다음에 순대 먹을 때 간장에 찍어 드셔 보세요
       </p>
     </main>
   </div>
@@ -93,8 +93,9 @@
     </div>
     <!-- main -->
     <main>
+      <br><br>
       <h3 class="intro">
-        <br><br>These are my FAVORITE songs and Photos!!
+        These are my FAVORITE songs and Photos!!
       </h3>
       <!-- Favorite song table -->
       <table class="table_song">
@@ -141,28 +142,13 @@
         사소한 게 마음에 안들어서 계속 고치고 고치고 고치는 중이에요....<br>
         근데 완벽하진 않다는 게 포인트입니다 ^_^
         <br><br>
-        <b class="Q1">오늘의 궁금증 : 순대에 간장을 찍어 먹으면 무슨 맛이 날까?</b><br><br>
+        <b class="Q1">오늘의 궁금증 : 순대를 간장에 찍어 먹으면 무슨 맛이 날까?</b><br><br>
         다들 궁금해지셨죠?<br>
-        다음에 순대 먹을 때 간장에 찍어서 드셔 보세요
+        다음에 순대 먹을 때 간장에 찍어 드셔 보세요
       </p>
     </main>
   </div>
 <!-- script ------------------------------------------------------------------------------------>
-  <script>
-    // alret: What is Latte???
-    alert("Latte is milk in Italia")
-    // 'ON' button
-    function ON() {
-      document.querySelector('.PageName').style.color = 'rgb(61, 203, 247)';
-      document.querySelector('.PageName').style.borderColor='rgb(255, 139, 139)';
-      document.querySelector('.PageName').style.backgroundColor='rgb(255, 218, 224)';
-    }
-    // 'OFF' button
-    function OFF() {
-      document.querySelector('.PageName').style.color = 'rgb(128, 111, 77)';
-      document.querySelector('.PageName').style.borderColor='rgb(190, 173, 136)';
-      document.querySelector('.PageName').style.backgroundColor='rgb(216, 198, 159)';
-    }
-  </script>
+  <script src="js/tmi.js"></script>
 </body>
 </html>

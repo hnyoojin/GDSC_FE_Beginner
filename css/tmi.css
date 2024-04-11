@@ -28,6 +28,11 @@ header {
     color: rgb(61, 203, 247);   
 }
 .PageName:hover{color:rgb(2, 255, 167);}
+/* button (ON/OFF) */
+.ON_button{background-color: yellow;}
+.ON_button:hover{background-color: rgb(255, 183, 0);}
+.OFF_button{background-color: gray;}
+.OFF_button:hover{background-color: rgb(213, 118, 118);}
 /* menu */
 .menu {
     border-right: 4px dotted rgb(177, 176, 160);
@@ -89,11 +94,13 @@ header {
 .intro {
     color:rgb(255, 60, 0);
     background-color: rgb(127, 246, 255);
+    padding: 3px;
+    margin: 10px 5px 5px 5px;
     display: inline;
 }
 /* Favorite Songs Table */
 .table_song {
-    width: 500px;
+    width: 400px;
     margin: 40px 0 0 0;
     background-color: rgb(186, 156, 134);
     border-radius: 2%;

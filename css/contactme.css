@@ -24,6 +24,11 @@ header {
     color: rgb(61, 203, 247);   
 }
 .PageName:hover{color:rgb(2, 255, 167);}
+/* button (ON/OFF) */
+.ON_button{background-color: yellow;}
+.ON_button:hover{background-color: rgb(255, 183, 0);}
+.OFF_button{background-color: gray;}
+.OFF_button:hover{background-color: rgb(213, 118, 118);}
 /* menu */
 .menu {
     border-right: 4px dotted rgb(177, 176, 160);
@@ -86,6 +91,7 @@ header {
 main {
     margin-left: 30px;
 }
+/* intro */
 .intro {
     color:rgb(255, 60, 0);
     background-color: rgb(127, 246, 255);
@@ -94,9 +100,14 @@ main {
     margin:5px;
     font-size: x-large;
 }
+.intro:hover {
+    color:rgb(157, 255, 0);
+    background-color: rgb(0, 136, 255) ;
+}
+/* contact list */
 .contact {
     text-decoration: none;
     color:black;
 }
 .contact:visited {color:black;}
-.contact:hover{color:rgb(255, 0, 191);}
+.contact:hover {color:rgb(255, 0, 191);}

@@ -6,13 +6,13 @@
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-<!--header--------------------------------------------------------------------------------------->
-  <header>
-    <a class="PageName" href="index.html" title="[Home] Hwang Yoojin">Yoojin.H</a>
-    <!-- header color button (ON/OFF) -->
-    <button onclick="ON">ON</button>
-    <button onclick="OFF">OFF</button>
-  </header>
+  <!--header--------------------------------------------------------------------------------------->
+    <header>
+      <a class="PageName" href="index.html" title="[Home] Hwang Yoojin">Yoojin.H</a>
+      <!-- header color button (ON/OFF) -->
+      <button onclick="ON()" class="ON_button">ON</button>
+      <button onclick="OFF()"class="OFF_button">OFF</button>
+    </header>
 <!-- grid1 : when width is longer than 1200px --------------------------------------------------->
   <div id="grid1">
     <!-- side bar -->
@@ -62,45 +62,32 @@
       <div class="item4"><a href="tmi.html"   title="TMI">TMI</a></div>
     </div>
     <!-- main -->
+    <!-- main -->
     <main>
-      <br><br><img src="img/ggongzi.png" width="100px">
-      <p>
-          안녕하세요 저는 <strong>황유진</strong>입니다.<br>
-          저는 부경대학교에서 컴퓨터공학과 3학년에 재학 중입니다.<br><br>
-      </p>
+      <img class="ggongzi" src="img/ggongzi.png"><br><br>
+      <b class="intro">
+        Yoojin Hwang is a Junior 
+        undergraduate computer engineering student 
+        attending the PKNU.
+      </b>
       <!-- private info table... -->
       <table class="table1">
-          <tr>
-            <td>나이</td>
-            <td>21</td>
+        <tr>
+          <td>나이</td>
+          <td>21</td>
+        </tr>
+        <tr>
+          <td>생일</td>
+          <td>FEB 17</td>
+        </tr>
+        <tr>
+          <td>mbti</td>
+          <td>INFP</td>
           </tr>
-          <tr>
-            <td>생일</td>
-            <td>FEB 17</td>
-          </tr>
-          <tr>
-            <td>mbti</td>
-            <td>INFP</td>
-            </tr>
       </table>
     </main>
   </div>
 <!-- script ------------------------------------------------------------------------------------>
-<script>
-  // alret: Ciao~!~~!
-  alert("Ciao~")
-  // 'ON' button
-  function ON() {
-    document.querySelector('.PageName').style.color = 'rgb(61, 203, 247)';
-    document.querySelector('.PageName').style.borderColor='rgb(255, 139, 139)';
-    document.querySelector('.PageName').style.backgroundColor='rgb(255, 218, 224)';
-  }
-  // 'OFF' button
-  function OFF() {
-    document.querySelector('.PageName').style.color = 'rgb(128, 111, 77)';
-    document.querySelector('.PageName').style.borderColor='rgb(190, 173, 136)';
-    document.querySelector('.PageName').style.backgroundColor='rgb(216, 198, 159)';
-  }
-</script>
+  <script src="js/index.js"></script>
 </body>
 </html>

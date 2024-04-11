@@ -6,12 +6,12 @@
     <link rel="stylesheet" href="css/contactme.css">
 </head>
 <body>
-<!--header--------------------------------------------------------------------------------------->
+  <!--header--------------------------------------------------------------------------------------->
     <header>
       <a class="PageName" href="index.html" title="[Home] Hwang Yoojin">Yoojin.H</a>
       <!-- header color button (ON/OFF) -->
-      <button onclick="ON">ON</button>
-      <button onclick="OFF">OFF</button>
+      <button onclick="ON()" class="ON_button">ON</button>
+      <button onclick="OFF()"class="OFF_button">OFF</button>
     </header>
 <!-- grid1 : when width is longer than 1200px --------------------------------------------------->
   <div id="grid1">
@@ -64,30 +64,23 @@
       <details>
         <summary><b class="intro">Contact Me !!!!</b></summary>
         <!-- contacts drop down -->
-        <p class="contact">
+        <p>
           <ul>
-            <li><a href="https://www.instagram.com/hwngyoojin" target="_blank" title="ig" style="color:black;text-decoration: none;">Instagram</a></li>
-            <li><a href="https://m.blog.naver.com/dddpdpdppddd" target="_blank" title="NaverBlog" style="color:black;text-decoration: none;">Naver Blog</a></li>
-            <li><a href="https://github.com/hnyoojin" target="_blank" title="Github" style="color:black;text-decoration: none;">Github</a></li>
+            <li><a class="contact" href="https://www.instagram.com/hwngyoojin" 
+              target="_blank" title="ig">
+              Instagram</a></li>
+            <li><a class="contact" href="https://m.blog.naver.com/dddpdpdppddd"
+              target="_blank" title="NaverBlog">
+              Naver Blog</a></li>
+            <li><a class="contact" href="https://github.com/hnyoojin" 
+              target="_blank" title="Github">
+              Github</a></li>
           </ul>
         </p>
       </details>
     </main>
   </div>
 <!-- script ------------------------------------------------------------------------------------>
-  <script>
-    // 'ON' button
-    function ON() {
-      document.querySelector('.PageName').style.color = 'rgb(61, 203, 247)';
-      document.querySelector('.PageName').style.borderColor='rgb(255, 139, 139)';
-      document.querySelector('.PageName').style.backgroundColor='rgb(255, 218, 224)';
-    }
-    // 'OFF' button
-    function OFF() {
-      document.querySelector('.PageName').style.color = 'rgb(128, 111, 77)';
-      document.querySelector('.PageName').style.borderColor='rgb(190, 173, 136)';
-      document.querySelector('.PageName').style.backgroundColor='rgb(216, 198, 159)';
-    }
-  </script>
+  <script src="js/contactme.js"></script>
 </body>
 </html>

@@ -1,11 +1,13 @@
-<h2> 👀 Yooijn's Github</h2><br>
+<h2> 👀 About Yoojin</h2>
 
-<p>I'm currently studyting HTML, CSS and JS.<br>
+: HTML, CSS, Javascript의 기초를 공부하고 응용해서 만든 페이지 입니다!
+
+<br>
+<p>페이지 바로가기<br>
 ➡️ <a href="https://hnyoojin.github.io/GDSC_FE_Beginner/"><b>Yoojin's web</b></a><br><br>
 </p>
 
 <h3>🌱Skills</h3>
 <ul>
-  <li>Programming Language - C, HTML, CSS, Python, JS, C++</li>
-  <li>Language - Korean, English, Italian</li>
+  <li>HTML, CSS, JS</li>
 </ul><p><br></p>
